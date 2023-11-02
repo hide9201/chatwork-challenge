@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08ADBF2C2AF3B055009170B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF2B2AF3B055009170B3 /* AppDelegate.swift */; };
+		08ADBF2E2AF3B055009170B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF2D2AF3B055009170B3 /* SceneDelegate.swift */; };
+		08ADBF302AF3B055009170B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF2F2AF3B055009170B3 /* ViewController.swift */; };
+		08ADBF332AF3B055009170B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ADBF312AF3B055009170B3 /* Main.storyboard */; };
+		08ADBF352AF3B057009170B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08ADBF342AF3B057009170B3 /* Assets.xcassets */; };
+		08ADBF382AF3B057009170B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ADBF362AF3B057009170B3 /* LaunchScreen.storyboard */; };
+		08ADBF432AF3B058009170B3 /* chatwork_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF422AF3B058009170B3 /* chatwork_challengeTests.swift */; };
+		08ADBF4D2AF3B058009170B3 /* chatwork_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF4C2AF3B058009170B3 /* chatwork_challengeUITests.swift */; };
+		08ADBF4F2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF4E2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08ADBF3F2AF3B057009170B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08ADBF202AF3B055009170B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08ADBF272AF3B055009170B3;
+			remoteInfo = "chatwork-challenge";
+		};
+		08ADBF492AF3B058009170B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08ADBF202AF3B055009170B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08ADBF272AF3B055009170B3;
+			remoteInfo = "chatwork-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08ADBF282AF3B055009170B3 /* chatwork-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chatwork-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08ADBF2B2AF3B055009170B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08ADBF2D2AF3B055009170B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08ADBF2F2AF3B055009170B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08ADBF322AF3B055009170B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08ADBF342AF3B057009170B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08ADBF372AF3B057009170B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08ADBF392AF3B057009170B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08ADBF3E2AF3B057009170B3 /* chatwork-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chatwork-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08ADBF422AF3B058009170B3 /* chatwork_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatwork_challengeTests.swift; sourceTree = "<group>"; };
+		08ADBF482AF3B058009170B3 /* chatwork-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chatwork-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08ADBF4C2AF3B058009170B3 /* chatwork_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatwork_challengeUITests.swift; sourceTree = "<group>"; };
+		08ADBF4E2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatwork_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08ADBF252AF3B055009170B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08ADBF3B2AF3B057009170B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08ADBF452AF3B058009170B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08ADBF1F2AF3B055009170B3 = {
+			isa = PBXGroup;
+			children = (
+				08ADBF2A2AF3B055009170B3 /* chatwork-challenge */,
+				08ADBF412AF3B058009170B3 /* chatwork-challengeTests */,
+				08ADBF4B2AF3B058009170B3 /* chatwork-challengeUITests */,
+				08ADBF292AF3B055009170B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08ADBF292AF3B055009170B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08ADBF282AF3B055009170B3 /* chatwork-challenge.app */,
+				08ADBF3E2AF3B057009170B3 /* chatwork-challengeTests.xctest */,
+				08ADBF482AF3B058009170B3 /* chatwork-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08ADBF2A2AF3B055009170B3 /* chatwork-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				08ADBF2B2AF3B055009170B3 /* AppDelegate.swift */,
+				08ADBF2D2AF3B055009170B3 /* SceneDelegate.swift */,
+				08ADBF2F2AF3B055009170B3 /* ViewController.swift */,
+				08ADBF312AF3B055009170B3 /* Main.storyboard */,
+				08ADBF342AF3B057009170B3 /* Assets.xcassets */,
+				08ADBF362AF3B057009170B3 /* LaunchScreen.storyboard */,
+				08ADBF392AF3B057009170B3 /* Info.plist */,
+			);
+			path = "chatwork-challenge";
+			sourceTree = "<group>";
+		};
+		08ADBF412AF3B058009170B3 /* chatwork-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				08ADBF422AF3B058009170B3 /* chatwork_challengeTests.swift */,
+			);
+			path = "chatwork-challengeTests";
+			sourceTree = "<group>";
+		};
+		08ADBF4B2AF3B058009170B3 /* chatwork-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08ADBF4C2AF3B058009170B3 /* chatwork_challengeUITests.swift */,
+				08ADBF4E2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift */,
+			);
+			path = "chatwork-challengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08ADBF272AF3B055009170B3 /* chatwork-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08ADBF522AF3B058009170B3 /* Build configuration list for PBXNativeTarget "chatwork-challenge" */;
+			buildPhases = (
+				08ADBF242AF3B055009170B3 /* Sources */,
+				08ADBF252AF3B055009170B3 /* Frameworks */,
+				08ADBF262AF3B055009170B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "chatwork-challenge";
+			productName = "chatwork-challenge";
+			productReference = 08ADBF282AF3B055009170B3 /* chatwork-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08ADBF3D2AF3B057009170B3 /* chatwork-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08ADBF552AF3B058009170B3 /* Build configuration list for PBXNativeTarget "chatwork-challengeTests" */;
+			buildPhases = (
+				08ADBF3A2AF3B057009170B3 /* Sources */,
+				08ADBF3B2AF3B057009170B3 /* Frameworks */,
+				08ADBF3C2AF3B057009170B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08ADBF402AF3B057009170B3 /* PBXTargetDependency */,
+			);
+			name = "chatwork-challengeTests";
+			productName = "chatwork-challengeTests";
+			productReference = 08ADBF3E2AF3B057009170B3 /* chatwork-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08ADBF472AF3B058009170B3 /* chatwork-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08ADBF582AF3B058009170B3 /* Build configuration list for PBXNativeTarget "chatwork-challengeUITests" */;
+			buildPhases = (
+				08ADBF442AF3B058009170B3 /* Sources */,
+				08ADBF452AF3B058009170B3 /* Frameworks */,
+				08ADBF462AF3B058009170B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08ADBF4A2AF3B058009170B3 /* PBXTargetDependency */,
+			);
+			name = "chatwork-challengeUITests";
+			productName = "chatwork-challengeUITests";
+			productReference = 08ADBF482AF3B058009170B3 /* chatwork-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08ADBF202AF3B055009170B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					08ADBF272AF3B055009170B3 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					08ADBF3D2AF3B057009170B3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 08ADBF272AF3B055009170B3;
+					};
+					08ADBF472AF3B058009170B3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 08ADBF272AF3B055009170B3;
+					};
+				};
+			};
+			buildConfigurationList = 08ADBF232AF3B055009170B3 /* Build configuration list for PBXProject "chatwork-challenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08ADBF1F2AF3B055009170B3;
+			productRefGroup = 08ADBF292AF3B055009170B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08ADBF272AF3B055009170B3 /* chatwork-challenge */,
+				08ADBF3D2AF3B057009170B3 /* chatwork-challengeTests */,
+				08ADBF472AF3B058009170B3 /* chatwork-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08ADBF262AF3B055009170B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08ADBF382AF3B057009170B3 /* LaunchScreen.storyboard in Resources */,
+				08ADBF352AF3B057009170B3 /* Assets.xcassets in Resources */,
+				08ADBF332AF3B055009170B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08ADBF3C2AF3B057009170B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08ADBF462AF3B058009170B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08ADBF242AF3B055009170B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08ADBF302AF3B055009170B3 /* ViewController.swift in Sources */,
+				08ADBF2C2AF3B055009170B3 /* AppDelegate.swift in Sources */,
+				08ADBF2E2AF3B055009170B3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08ADBF3A2AF3B057009170B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08ADBF432AF3B058009170B3 /* chatwork_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08ADBF442AF3B058009170B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08ADBF4D2AF3B058009170B3 /* chatwork_challengeUITests.swift in Sources */,
+				08ADBF4F2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08ADBF402AF3B057009170B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08ADBF272AF3B055009170B3 /* chatwork-challenge */;
+			targetProxy = 08ADBF3F2AF3B057009170B3 /* PBXContainerItemProxy */;
+		};
+		08ADBF4A2AF3B058009170B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08ADBF272AF3B055009170B3 /* chatwork-challenge */;
+			targetProxy = 08ADBF492AF3B058009170B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08ADBF312AF3B055009170B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08ADBF322AF3B055009170B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08ADBF362AF3B057009170B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08ADBF372AF3B057009170B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08ADBF502AF3B058009170B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08ADBF512AF3B058009170B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08ADBF532AF3B058009170B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNAHU294NB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "chatwork-challenge/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hide.chatwork-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08ADBF542AF3B058009170B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNAHU294NB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "chatwork-challenge/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hide.chatwork-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08ADBF562AF3B058009170B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNAHU294NB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hide.chatwork-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatwork-challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/chatwork-challenge";
+			};
+			name = Debug;
+		};
+		08ADBF572AF3B058009170B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNAHU294NB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hide.chatwork-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatwork-challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/chatwork-challenge";
+			};
+			name = Release;
+		};
+		08ADBF592AF3B058009170B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNAHU294NB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hide.chatwork-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "chatwork-challenge";
+			};
+			name = Debug;
+		};
+		08ADBF5A2AF3B058009170B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNAHU294NB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hide.chatwork-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "chatwork-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08ADBF232AF3B055009170B3 /* Build configuration list for PBXProject "chatwork-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08ADBF502AF3B058009170B3 /* Debug */,
+				08ADBF512AF3B058009170B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08ADBF522AF3B058009170B3 /* Build configuration list for PBXNativeTarget "chatwork-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08ADBF532AF3B058009170B3 /* Debug */,
+				08ADBF542AF3B058009170B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08ADBF552AF3B058009170B3 /* Build configuration list for PBXNativeTarget "chatwork-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08ADBF562AF3B058009170B3 /* Debug */,
+				08ADBF572AF3B058009170B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08ADBF582AF3B058009170B3 /* Build configuration list for PBXNativeTarget "chatwork-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08ADBF592AF3B058009170B3 /* Debug */,
+				08ADBF5A2AF3B058009170B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08ADBF202AF3B055009170B3 /* Project object */;
+}
