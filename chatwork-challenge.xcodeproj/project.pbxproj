@@ -16,6 +16,9 @@
 		08ADBF432AF3B058009170B3 /* chatwork_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF422AF3B058009170B3 /* chatwork_challengeTests.swift */; };
 		08ADBF4D2AF3B058009170B3 /* chatwork_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF4C2AF3B058009170B3 /* chatwork_challengeUITests.swift */; };
 		08ADBF4F2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF4E2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift */; };
+		429093BE590DF1AC3E1EC128 /* Pods_chatwork_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD396C1D29FDF51A0498A441 /* Pods_chatwork_challenge.framework */; };
+		67E54FBB055B84C3BB1DC870 /* Pods_chatwork_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945F502F3803D6E29BCD0482 /* Pods_chatwork_challengeTests.framework */; };
+		F45E169CEC74DE8D13FDAE83 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446A0E9467DCF172B20140D8 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		08ADBF482AF3B058009170B3 /* chatwork-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chatwork-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08ADBF4C2AF3B058009170B3 /* chatwork_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatwork_challengeUITests.swift; sourceTree = "<group>"; };
 		08ADBF4E2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatwork_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E1AE3206585D5979DB09B20 /* Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-chatwork-challenge-chatwork-challengeUITests/Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		446A0E9467DCF172B20140D8 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chatwork_challenge_chatwork_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF4D9A55EBF4DB7FD32D6A2 /* Pods-chatwork-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatwork-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-chatwork-challengeTests/Pods-chatwork-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		775A77FDA24E76332B6226E2 /* Pods-chatwork-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatwork-challenge.release.xcconfig"; path = "Target Support Files/Pods-chatwork-challenge/Pods-chatwork-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		9021DFAE719E96D82BC799F5 /* Pods-chatwork-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatwork-challenge.debug.xcconfig"; path = "Target Support Files/Pods-chatwork-challenge/Pods-chatwork-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		945F502F3803D6E29BCD0482 /* Pods_chatwork_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chatwork_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE16E8635F534A7CD6C4EBA9 /* Pods-chatwork-challenge-chatwork-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatwork-challenge-chatwork-challengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-chatwork-challenge-chatwork-challengeUITests/Pods-chatwork-challenge-chatwork-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC2FB9EE0FB788B185DF6544 /* Pods-chatwork-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatwork-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-chatwork-challengeTests/Pods-chatwork-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD396C1D29FDF51A0498A441 /* Pods_chatwork_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chatwork_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429093BE590DF1AC3E1EC128 /* Pods_chatwork_challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E54FBB055B84C3BB1DC870 /* Pods_chatwork_challengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45E169CEC74DE8D13FDAE83 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				08ADBF412AF3B058009170B3 /* chatwork-challengeTests */,
 				08ADBF4B2AF3B058009170B3 /* chatwork-challengeUITests */,
 				08ADBF292AF3B055009170B3 /* Products */,
+				194CA63BFEFCFB49550E1C37 /* Pods */,
+				9EA9B988D7BE207D9D987364 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,29 @@
 			path = "chatwork-challengeUITests";
 			sourceTree = "<group>";
 		};
+		194CA63BFEFCFB49550E1C37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9021DFAE719E96D82BC799F5 /* Pods-chatwork-challenge.debug.xcconfig */,
+				775A77FDA24E76332B6226E2 /* Pods-chatwork-challenge.release.xcconfig */,
+				AE16E8635F534A7CD6C4EBA9 /* Pods-chatwork-challenge-chatwork-challengeUITests.debug.xcconfig */,
+				2E1AE3206585D5979DB09B20 /* Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig */,
+				4AF4D9A55EBF4DB7FD32D6A2 /* Pods-chatwork-challengeTests.debug.xcconfig */,
+				DC2FB9EE0FB788B185DF6544 /* Pods-chatwork-challengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9EA9B988D7BE207D9D987364 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD396C1D29FDF51A0498A441 /* Pods_chatwork_challenge.framework */,
+				446A0E9467DCF172B20140D8 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework */,
+				945F502F3803D6E29BCD0482 /* Pods_chatwork_challengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08ADBF522AF3B058009170B3 /* Build configuration list for PBXNativeTarget "chatwork-challenge" */;
 			buildPhases = (
+				BE08F1C2CC361E4828FE5735 /* [CP] Check Pods Manifest.lock */,
 				08ADBF242AF3B055009170B3 /* Sources */,
 				08ADBF252AF3B055009170B3 /* Frameworks */,
 				08ADBF262AF3B055009170B3 /* Resources */,
+				95A3D5CD4BBE749AD52BA96E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08ADBF552AF3B058009170B3 /* Build configuration list for PBXNativeTarget "chatwork-challengeTests" */;
 			buildPhases = (
+				98281A6A854EFCD6EF2779E2 /* [CP] Check Pods Manifest.lock */,
 				08ADBF3A2AF3B057009170B3 /* Sources */,
 				08ADBF3B2AF3B057009170B3 /* Frameworks */,
 				08ADBF3C2AF3B057009170B3 /* Resources */,
@@ -169,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08ADBF582AF3B058009170B3 /* Build configuration list for PBXNativeTarget "chatwork-challengeUITests" */;
 			buildPhases = (
+				D69A9D38DDB9078293E2A4BC /* [CP] Check Pods Manifest.lock */,
 				08ADBF442AF3B058009170B3 /* Sources */,
 				08ADBF452AF3B058009170B3 /* Frameworks */,
 				08ADBF462AF3B058009170B3 /* Resources */,
+				BFBC67F05F26A5289D67F4E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +297,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95A3D5CD4BBE749AD52BA96E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chatwork-challenge/Pods-chatwork-challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chatwork-challenge/Pods-chatwork-challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chatwork-challenge/Pods-chatwork-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98281A6A854EFCD6EF2779E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chatwork-challengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE08F1C2CC361E4828FE5735 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chatwork-challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFBC67F05F26A5289D67F4E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chatwork-challenge-chatwork-challengeUITests/Pods-chatwork-challenge-chatwork-challengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chatwork-challenge-chatwork-challengeUITests/Pods-chatwork-challenge-chatwork-challengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chatwork-challenge-chatwork-challengeUITests/Pods-chatwork-challenge-chatwork-challengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D69A9D38DDB9078293E2A4BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chatwork-challenge-chatwork-challengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08ADBF242AF3B055009170B3 /* Sources */ = {
@@ -437,12 +585,14 @@
 		};
 		08ADBF532AF3B058009170B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9021DFAE719E96D82BC799F5 /* Pods-chatwork-challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RNAHU294NB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "chatwork-challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -465,12 +615,14 @@
 		};
 		08ADBF542AF3B058009170B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 775A77FDA24E76332B6226E2 /* Pods-chatwork-challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RNAHU294NB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "chatwork-challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -493,6 +645,7 @@
 		};
 		08ADBF562AF3B058009170B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF4D9A55EBF4DB7FD32D6A2 /* Pods-chatwork-challengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +666,7 @@
 		};
 		08ADBF572AF3B058009170B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC2FB9EE0FB788B185DF6544 /* Pods-chatwork-challengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +687,7 @@
 		};
 		08ADBF592AF3B058009170B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE16E8635F534A7CD6C4EBA9 /* Pods-chatwork-challenge-chatwork-challengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +706,7 @@
 		};
 		08ADBF5A2AF3B058009170B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1AE3206585D5979DB09B20 /* Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

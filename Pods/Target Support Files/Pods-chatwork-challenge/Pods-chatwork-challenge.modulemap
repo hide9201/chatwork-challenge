@@ -1,0 +1,6 @@
+framework module Pods_chatwork_challenge {
+  umbrella header "Pods-chatwork-challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

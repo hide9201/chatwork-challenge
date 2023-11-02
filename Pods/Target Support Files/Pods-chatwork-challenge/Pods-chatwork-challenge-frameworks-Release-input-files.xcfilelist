@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-chatwork-challenge/Pods-chatwork-challenge-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Instantiate/Instantiate.framework
+${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
+${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework
+${BUILT_PRODUCTS_DIR}/ReusableKit/ReusableKit.framework

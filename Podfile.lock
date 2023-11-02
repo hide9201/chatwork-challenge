@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (5.6.4)
+  - Instantiate (4.0.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - PromiseKit (6.18.1):
+    - PromiseKit/CorePromise (= 6.18.1)
+    - PromiseKit/Foundation (= 6.18.1)
+    - PromiseKit/UIKit (= 6.18.1)
+  - PromiseKit/CorePromise (6.18.1)
+  - PromiseKit/Foundation (6.18.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.18.1):
+    - PromiseKit/CorePromise
+  - ReusableKit (3.0.0):
+    - ReusableKit/Core (= 3.0.0)
+  - ReusableKit/Core (3.0.0)
+
+DEPENDENCIES:
+  - Instantiate
+  - Moya
+  - PromiseKit
+  - ReusableKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Instantiate
+    - Moya
+    - PromiseKit
+    - ReusableKit
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
+  ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
+
+PODFILE CHECKSUM: 93ab1b745ffd735f4ad24db3e3de4f75605ded89
+
+COCOAPODS: 1.14.2

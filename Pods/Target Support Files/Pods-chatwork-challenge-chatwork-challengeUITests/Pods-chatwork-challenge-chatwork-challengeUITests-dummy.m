@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_chatwork_challenge_chatwork_challengeUITests : NSObject
+@end
+@implementation PodsDummy_Pods_chatwork_challenge_chatwork_challengeUITests
+@end
