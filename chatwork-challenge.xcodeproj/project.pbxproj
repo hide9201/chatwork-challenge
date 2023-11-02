@@ -17,6 +17,7 @@
 		08ADBF4D2AF3B058009170B3 /* chatwork_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF4C2AF3B058009170B3 /* chatwork_challengeUITests.swift */; };
 		08ADBF4F2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF4E2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift */; };
 		08ADBF612AF3D759009170B3 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF602AF3D759009170B3 /* NSObject+.swift */; };
+		08ADBF632AF3D7C1009170B3 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF622AF3D7C1009170B3 /* Storyboardable.swift */; };
 		429093BE590DF1AC3E1EC128 /* Pods_chatwork_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD396C1D29FDF51A0498A441 /* Pods_chatwork_challenge.framework */; };
 		67E54FBB055B84C3BB1DC870 /* Pods_chatwork_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945F502F3803D6E29BCD0482 /* Pods_chatwork_challengeTests.framework */; };
 		F45E169CEC74DE8D13FDAE83 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446A0E9467DCF172B20140D8 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework */; };
@@ -54,6 +55,7 @@
 		08ADBF4C2AF3B058009170B3 /* chatwork_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatwork_challengeUITests.swift; sourceTree = "<group>"; };
 		08ADBF4E2AF3B058009170B3 /* chatwork_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatwork_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		08ADBF602AF3D759009170B3 /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		08ADBF622AF3D7C1009170B3 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		2E1AE3206585D5979DB09B20 /* Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-chatwork-challenge-chatwork-challengeUITests/Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		446A0E9467DCF172B20140D8 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chatwork_challenge_chatwork_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF4D9A55EBF4DB7FD32D6A2 /* Pods-chatwork-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatwork-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-chatwork-challengeTests/Pods-chatwork-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		08ADBF5D2AF3D6C0009170B3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				08ADBF622AF3D7C1009170B3 /* Storyboardable.swift */,
 				08ADBF5F2AF3D6DE009170B3 /* Launch */,
 				08ADBF5E2AF3D6D2009170B3 /* Main */,
 			);
@@ -452,6 +455,7 @@
 				08ADBF302AF3B055009170B3 /* ViewController.swift in Sources */,
 				08ADBF612AF3D759009170B3 /* NSObject+.swift in Sources */,
 				08ADBF2C2AF3B055009170B3 /* AppDelegate.swift in Sources */,
+				08ADBF632AF3D7C1009170B3 /* Storyboardable.swift in Sources */,
 				08ADBF2E2AF3B055009170B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
