@@ -10,6 +10,4 @@ enum AppConstant {
     enum API {
         static let baseURL = "https://api.chatwork.com/v2"
     }
-    
-    static var token = ""
 }

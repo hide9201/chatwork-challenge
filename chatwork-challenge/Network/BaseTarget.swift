@@ -16,14 +16,6 @@ extension BaseTarget {
         return URL(string: AppConstant.API.baseURL)!
     }
     
-    var headers: [String : String]? {
-        return [
-            "x-chatworktoken": "\(AppConstant.token)",
-            "accept": "application/json",
-            "content-type": "application/x-www-form-urlencoded"
-        ]
-    }
-    
     var validationType: ValidationType {
         return .successCodes
     }

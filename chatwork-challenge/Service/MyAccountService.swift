@@ -9,8 +9,8 @@ import Combine
 
 struct MyAccountService {
     
-    func getMyAccount() -> AnyPublisher<MyAccount, Error> {
-        return API.shared.call(MyAccountTarget.getMyAccount)
+    func getMyAccount(token: String) -> AnyPublisher<MyAccount, Error> {
+        return API.shared.call(MyAccountTarget.getMyAccount(token: token))
     }
 }
 

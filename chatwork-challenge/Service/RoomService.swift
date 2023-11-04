@@ -9,7 +9,7 @@ import Combine
 
 struct RoomService {
     
-    func getRoomList() -> AnyPublisher<[Room], Error> {
-        return API.shared.call(RoomTarget.getRoomList)
+    func getRoomList(token: String) -> AnyPublisher<[Room], Error> {
+        return API.shared.call(RoomTarget.getRoomList(token: token))
     }
 }

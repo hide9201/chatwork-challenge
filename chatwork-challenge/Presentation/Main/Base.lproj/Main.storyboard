@@ -25,15 +25,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejO-nV-mH7">
-                                <rect key="frame" x="150" y="463" width="93.333333333333314" height="32"/>
+                                <rect key="frame" x="150" y="475" width="93.333333333333314" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="n0P-6K-w0i"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="ログイン"/>
-                                <connections>
-                                    <action selector="loginButtonDidTap:" destination="Vre-r2-NXd" eventType="touchUpInside" id="beB-1S-955"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tokenでログイン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8U-Dn-hOO">
                                 <rect key="frame" x="130" y="377" width="133" height="24"/>
@@ -44,20 +41,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログインに失敗しました" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J6-gQ-Ub5">
+                                <rect key="frame" x="76.666666666666686" y="447" width="240" height="14.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="N5v-bt-62t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SNo-l2-fYz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="2J6-gQ-Ub5" firstAttribute="centerX" secondItem="FGe-vH-N7b" secondAttribute="centerX" id="5aH-74-PO1"/>
                             <constraint firstItem="Jg9-R1-JZI" firstAttribute="centerY" secondItem="FGe-vH-N7b" secondAttribute="centerY" id="OZw-hq-xJ9"/>
                             <constraint firstItem="ejO-nV-mH7" firstAttribute="centerX" secondItem="FGe-vH-N7b" secondAttribute="centerX" id="Rbj-7z-j1r"/>
                             <constraint firstItem="Jg9-R1-JZI" firstAttribute="top" secondItem="r8U-Dn-hOO" secondAttribute="bottom" constant="8" id="iKe-gy-082"/>
-                            <constraint firstItem="ejO-nV-mH7" firstAttribute="top" secondItem="Jg9-R1-JZI" secondAttribute="bottom" constant="20" id="lz8-Dy-cu6"/>
+                            <constraint firstItem="ejO-nV-mH7" firstAttribute="top" secondItem="Jg9-R1-JZI" secondAttribute="bottom" constant="32" id="lz8-Dy-cu6"/>
                             <constraint firstItem="r8U-Dn-hOO" firstAttribute="centerX" secondItem="FGe-vH-N7b" secondAttribute="centerX" id="pWy-fq-Etw"/>
+                            <constraint firstItem="2J6-gQ-Ub5" firstAttribute="top" secondItem="Jg9-R1-JZI" secondAttribute="bottom" constant="4" id="q4w-O2-tES"/>
                             <constraint firstItem="Jg9-R1-JZI" firstAttribute="centerX" secondItem="FGe-vH-N7b" secondAttribute="centerX" id="v5X-nx-D0B"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ログイン" id="oAs-W1-DzG"/>
                     <connections>
+                        <outlet property="errorMessageLabel" destination="2J6-gQ-Ub5" id="lVK-J4-NaY"/>
+                        <outlet property="loginButton" destination="ejO-nV-mH7" id="Zcr-Gn-L9e"/>
                         <outlet property="tokenTextField" destination="Jg9-R1-JZI" id="i1h-ea-wS8"/>
                     </connections>
                 </viewController>
@@ -85,6 +95,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

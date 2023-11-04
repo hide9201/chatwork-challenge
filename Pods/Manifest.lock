@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.4)
+  - CombineCocoa (0.4.1)
   - Instantiate (4.0.0)
   - Moya/Combine (15.0.0):
     - Moya/Core
@@ -19,6 +20,7 @@ PODS:
   - ReusableKit/Core (3.0.0)
 
 DEPENDENCIES:
+  - CombineCocoa
   - Instantiate
   - Moya/Combine (~> 15.0)
   - PromiseKit
@@ -27,6 +29,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CombineCocoa
     - Instantiate
     - Moya
     - PromiseKit
@@ -34,11 +37,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  CombineCocoa: e5210dbfb480ff251078929459ac17e750e7af1d
   Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
   ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
 
-PODFILE CHECKSUM: f5116d702865a95923f11bb7ed8d5aabaad0e2dc
+PODFILE CHECKSUM: f5333a62fbe7f212ad08d013b2d079054af0df79
 
 COCOAPODS: 1.14.2

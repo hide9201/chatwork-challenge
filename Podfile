@@ -14,6 +14,7 @@ target 'chatwork-challenge' do
   # Misc
   pod 'Instantiate'
   pod 'ReusableKit'
+  pod 'CombineCocoa'
 
 
   # Pods for chatwork-challenge
