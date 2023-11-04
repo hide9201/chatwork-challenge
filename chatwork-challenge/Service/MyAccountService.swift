@@ -5,11 +5,11 @@
 //  Created by hide on 2023/11/03.
 //
 
-import PromiseKit
+import Combine
 
 struct MyAccountService {
     
-    func getMyAccount() -> Promise<MyAccount> {
+    func getMyAccount() -> AnyPublisher<MyAccount, Error> {
         return API.shared.call(MyAccountTarget.getMyAccount)
     }
 }

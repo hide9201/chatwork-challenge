@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
     
     // MARK: - Property
     
+    private var cancellables: [AnyCancellable] = []
     private var myAccountService = MyAccountService()
     private var roomService = RoomService()
     
@@ -32,18 +34,17 @@ class ViewController: UIViewController {
         AppConstant.token = token
         
         roomService.getRoomList()
-            .done { rooms in
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    print("finished")
+                case .failure(let error):
+                    print(error)
+                }
+            }, receiveValue: { rooms in
                 print(rooms)
-            }.catch { error in
-                print(error)
-            }
-        
-        myAccountService.getMyAccount()
-            .done { myAccount in
-                print(myAccount)
-            }.catch { error in
-                print(error)
-            }
+            })
+            .store(in: &cancellables)
     }
 }
 
