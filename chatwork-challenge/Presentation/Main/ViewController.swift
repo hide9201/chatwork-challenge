@@ -35,6 +35,12 @@ class ViewController: UIViewController {
             .store(in: &cancellables)
         viewModel.bind(input: .init(loginButtonDidTap: loginButtonDidTap.eraseToAnyPublisher()))
         
+        viewModel.errorLabelText
+            .sink { [weak self] errorLabelText in
+                self?.errorMessageLabel.text = errorLabelText
+            }
+            .store(in: &cancellables)
+        
         viewModel.rooms
             .sink { [weak self] rooms in
                 // ここで遷移?

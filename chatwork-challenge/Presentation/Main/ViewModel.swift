@@ -22,6 +22,7 @@ final class ViewModel {
     private let roomService = RoomService()
     
     var rooms = CurrentValueSubject<[Room], Never>([])
+    var errorLabelText = CurrentValueSubject<String, Never>("")
     var roomListView = AnyPublisher<[Room], Never>([].publisher)
     
     func bind(input: ViewModelInput) {
@@ -40,10 +41,12 @@ final class ViewModel {
                     print("finished")
                 case .failure(let error):
                     self.rooms.value = []
+                    self.errorLabelText.value = "ログインに失敗しました"
                     print(error)
                 }
             }, receiveValue: { rooms in
                 self.rooms.value = rooms
+                self.errorLabelText.value = ""
                 print(rooms)
             })
             .store(in: &cancellables)
