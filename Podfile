@@ -6,7 +6,7 @@ target 'chatwork-challenge' do
   use_frameworks!
 
   # Network
-  pod 'Moya'
+  pod 'Moya/Combine', '~> 15.0'
 
   # Promise
   pod 'PromiseKit'
@@ -14,6 +14,7 @@ target 'chatwork-challenge' do
   # Misc
   pod 'Instantiate'
   pod 'ReusableKit'
+  pod 'CombineCocoa'
 
 
   # Pods for chatwork-challenge
