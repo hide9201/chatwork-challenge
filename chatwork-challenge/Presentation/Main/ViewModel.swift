@@ -18,12 +18,10 @@ final class ViewModel {
     // MARK: - Property
     
     private var cancellables = Set<AnyCancellable>()
-    private let myAccountService = MyAccountService()
     private let roomService = RoomService()
     
     var rooms = CurrentValueSubject<[Room], Never>([])
     var errorLabelText = CurrentValueSubject<String, Never>("")
-    var roomListView = AnyPublisher<[Room], Never>([].publisher)
     
     func bind(input: ViewModelInput) {
         input.loginButtonDidTap

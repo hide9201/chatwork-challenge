@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+final class RoomListViewModel {
+    
+    // MARK: - Property
+    
+    var rooms: [Room]!
+    
+    // MARK: - Initializer
+    
+    init(rooms: [Room]) {
+        self.rooms = rooms
+    }
+}

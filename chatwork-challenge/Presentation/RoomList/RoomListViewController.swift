@@ -13,22 +13,50 @@ final class RoomListViewController: UIViewController {
     
     // MARK: - Outlet
     
-    @IBOutlet weak var roomListTableView: UITableView!
+    @IBOutlet weak var roomListTableView: UITableView! {
+        didSet {
+            roomListTableView.dataSource = self
+        }
+    }
     
     // MARK: - Property
     
-    private var rooms: [Room]!
+    private var roomListViewModel: RoomListViewModel!
+    private var cancellables = Set<AnyCancellable>()
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
-        print(rooms!)
+        navigationItem.hidesBackButton = true
+        roomListTableView.didSelectRowPublisher
+            .sink { indexPath in
+                print(indexPath.row)
+                // 遷移
+            }
+            .store(in: &cancellables)
     }
 }
+
+// MARK: - Storyboardable
 
 extension RoomListViewController: Storyboardable {
     
     func inject(_ dependency: [Room]) {
-        rooms = dependency
+        roomListViewModel = RoomListViewModel(rooms: dependency)
+    }
+}
+
+// MARK: - UITableViewDataSource
+
+extension RoomListViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return roomListViewModel.rooms.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = roomListViewModel.rooms[indexPath.row].name
+        return cell
     }
 }

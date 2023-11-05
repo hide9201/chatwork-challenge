@@ -1,5 +1,5 @@
 //
-//  MyAccount.swift
+//  Account.swift
 //  chatwork-challenge
 //
 //  Created by hide on 2023/11/03.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct MyAccount: Codable {
+struct Account: Codable {
     let accountId: Int
-    let roomId: Int
     let name: String
+    let AvatarImageURL: String
 }
