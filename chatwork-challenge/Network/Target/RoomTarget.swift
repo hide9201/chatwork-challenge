@@ -8,8 +8,9 @@
 import Moya
 
 enum RoomTarget {
-    case getRoomList(token: String)
-    case postMessage(token: String, roomId: Int, message: String)
+    case getRoomList
+    case getMessages(roomId: Int)
+    case postMessage(roomId: Int, body: String)
 }
 
 extension RoomTarget: BaseTarget {
@@ -17,7 +18,9 @@ extension RoomTarget: BaseTarget {
         switch self {
         case .getRoomList:
             return "/rooms"
-        case .postMessage(_, let roomId, _):
+        case .getMessages(let roomId):
+            return "rooms/\(roomId)/messages"
+        case .postMessage(let roomId, _):
             return "rooms/\(roomId)/messages"
         }
     }
@@ -26,6 +29,8 @@ extension RoomTarget: BaseTarget {
         switch self {
         case .getRoomList:
             return .get
+        case .getMessages:
+            return.get
         case .postMessage:
             return .post
         }
@@ -35,28 +40,13 @@ extension RoomTarget: BaseTarget {
         switch self {
         case .getRoomList:
             return .requestPlain
-        case .postMessage(_, _, let message):
+        case .getMessages:
+            return .requestPlain
+        case .postMessage(_, let body):
             let parameters: Parameters = [
-                "body": message
+                "body": body
             ]
             return .requestParameters(parameters: parameters, encoding: URLEncoding.httpBody)
         }
-    }
-    
-    var headers: [String : String]? {
-        switch self {
-        case .getRoomList(let token):
-            return [
-                "x-chatworktoken": token,
-                "accept": "application/json",
-            ]
-        case .postMessage(let token, _, _):
-            return [
-                "x-chatworktoken": token,
-                "accept": "application/json",
-                "content-type": "application/x-www-form-urlencoded"
-            ]
-        }
-        
     }
 }

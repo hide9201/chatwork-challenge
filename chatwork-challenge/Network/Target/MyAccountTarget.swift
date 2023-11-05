@@ -8,7 +8,7 @@
 import Moya
 
 enum MyAccountTarget {
-    case getMyAccount(token: String)
+    case getMyAccount
 }
 
 extension MyAccountTarget: BaseTarget {
@@ -30,16 +30,6 @@ extension MyAccountTarget: BaseTarget {
         switch self {
         case .getMyAccount:
             return .requestPlain
-        }
-    }
-    
-    var headers: [String : String]? {
-        switch self {
-        case .getMyAccount(let token):
-            return [
-                "x-chatworktoken": token,
-                "accept": "application/json",
-            ]
         }
     }
 }

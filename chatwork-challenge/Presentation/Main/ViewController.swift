@@ -9,7 +9,7 @@ import UIKit
 import Combine
 import CombineCocoa
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     // MARK: - Outlet
     
@@ -43,7 +43,10 @@ class ViewController: UIViewController {
         
         viewModel.rooms
             .sink { [weak self] rooms in
+                if rooms.isEmpty { return }
                 // ここで遷移?
+                let roomListViewController = RoomListViewController(with: rooms)
+                self?.navigationController?.pushViewController(roomListViewController, animated: true)
                 print("RoomList\n\(rooms)")
             }
             .store(in: &cancellables)

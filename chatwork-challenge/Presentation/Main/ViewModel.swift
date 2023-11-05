@@ -18,23 +18,22 @@ final class ViewModel {
     // MARK: - Property
     
     private var cancellables = Set<AnyCancellable>()
-    private let myAccountService = MyAccountService()
     private let roomService = RoomService()
     
     var rooms = CurrentValueSubject<[Room], Never>([])
     var errorLabelText = CurrentValueSubject<String, Never>("")
-    var roomListView = AnyPublisher<[Room], Never>([].publisher)
     
     func bind(input: ViewModelInput) {
         input.loginButtonDidTap
             .sink { [weak self] token in
+                KeychainManager.shared.set(key: "token", value: token)
                 self?.getRoomList(token: token)
             }
             .store(in: &cancellables)
     }
     
     func getRoomList(token: String) {
-        roomService.getRoomList(token: token)
+        roomService.getRoomList()
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .finished:
