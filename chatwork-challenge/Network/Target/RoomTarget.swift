@@ -41,7 +41,10 @@ extension RoomTarget: BaseTarget {
         case .getRoomList:
             return .requestPlain
         case .getMessages:
-            return .requestPlain
+            let parameters: Parameters = [
+                "force": "1"
+            ]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         case .postMessage(_, let body):
             let parameters: Parameters = [
                 "body": body

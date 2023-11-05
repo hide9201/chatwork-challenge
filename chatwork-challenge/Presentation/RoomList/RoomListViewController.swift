@@ -29,9 +29,12 @@ final class RoomListViewController: UIViewController {
     override func viewDidLoad() {
         navigationItem.hidesBackButton = true
         roomListTableView.didSelectRowPublisher
-            .sink { indexPath in
-                print(indexPath.row)
-                // 遷移
+            .sink { [weak self] indexPath in
+                guard let self = self else { return }
+                
+                let room = self.roomListViewModel.rooms[indexPath.row]
+                let chatRoomViewController = ChatRoomViewController(with: room)
+                self.navigationController?.pushViewController(chatRoomViewController, animated: true)
             }
             .store(in: &cancellables)
     }
