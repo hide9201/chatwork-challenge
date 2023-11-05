@@ -32,6 +32,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="チャット一覧" id="srK-ld-VSk"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="roomListTableView" destination="Qq3-UV-UvC" id="cnt-VO-qEG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

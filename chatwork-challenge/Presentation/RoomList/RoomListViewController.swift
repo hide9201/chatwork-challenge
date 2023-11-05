@@ -7,8 +7,13 @@
 
 import UIKit
 import Combine
+import CombineCocoa
 
 final class RoomListViewController: UIViewController {
+    
+    // MARK: - Outlet
+    
+    @IBOutlet weak var roomListTableView: UITableView!
     
     // MARK: - Property
     

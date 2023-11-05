@@ -20,6 +20,14 @@ extension BaseTarget {
         return .successCodes
     }
     
+    var headers: [String : String]? {
+        return [
+            "x-chatworktoken": KeychainManager.shared.get(key: "token") ?? "",
+            "accept": "application/json",
+            "content-type": "application/x-www-form-urlencoded"
+        ]
+    }
+    
     var sampleData: Data {
         return Data()
     }
