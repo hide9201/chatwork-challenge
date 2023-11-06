@@ -43,6 +43,7 @@ final class ViewController: UIViewController {
             .store(in: &cancellables)
         
         viewModel.rooms
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] rooms in
                 if rooms.isEmpty { return }
                 let roomListViewController = RoomListViewController(with: rooms)

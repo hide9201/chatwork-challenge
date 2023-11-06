@@ -29,8 +29,10 @@ final class RoomListViewController: UIViewController {
     override func viewDidLoad() {
         navigationItem.hidesBackButton = true
         roomListTableView.didSelectRowPublisher
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] indexPath in
                 guard let self = self else { return }
+                self.roomListTableView.deselectRow(at: indexPath, animated: true)
                 
                 let room = self.roomListViewModel.rooms[indexPath.row]
                 let chatRoomViewController = ChatRoomViewController(with: room)

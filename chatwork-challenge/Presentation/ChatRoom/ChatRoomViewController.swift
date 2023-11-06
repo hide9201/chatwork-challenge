@@ -18,6 +18,7 @@ final class ChatRoomViewController: UIViewController {
         didSet {
             messageTableView.dataSource = self
             messageTableView.separatorStyle = .none
+            messageTableView.allowsSelection = false
             messageTableView.register(MessageTableViewCell.reusable)
         }
     }
