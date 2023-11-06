@@ -18,7 +18,10 @@ final class ChatRoomViewController: UIViewController {
             messageTableView.dataSource = self
         }
     }
-    
+
+    @IBOutlet weak var sendMessageStackView: UIStackView!
+    @IBOutlet weak var messageBodyTextView: UITextView!
+    @IBOutlet weak var sendMessageStackViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var sendButton: UIButton!
     
     // MARK: - Property
@@ -33,6 +36,7 @@ final class ChatRoomViewController: UIViewController {
     
     override func viewDidLoad() {
         navigationItem.title = chatRoomViewModel.room.name
+        sendMessageStackView.addBorder(width: 1.0, color: UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0), position: .top)
         
         sendButton.tapPublisher
             .sink { [weak self] in
@@ -45,8 +49,45 @@ final class ChatRoomViewController: UIViewController {
         didLoad.send()
         
         chatRoomViewModel.messages
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] message in
                 self?.messageTableView.reloadData()
+            }
+            .store(in: &cancellables)
+        
+        messageTableView.willBeginDraggingPublisher
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] in
+                self?.messageBodyTextView.resignFirstResponder()
+            }
+            .store(in: &cancellables)
+        
+        NotificationCenter.default.publisher(for: UIResponder.keyboardWillShowNotification)
+            .compactMap { $0.userInfo }
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] userInfo in
+                guard let keyboardHeight = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect)?.height,
+                      let keyboardAnimationDuration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval,
+                      let keyboardAnimationCurve = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt
+                else { return }
+                
+                UIView.animate(withDuration: keyboardAnimationDuration, delay: 0, options: UIView.AnimationOptions(rawValue: keyboardAnimationCurve)) {
+                    self?.sendMessageStackViewBottomConstraint.constant = keyboardHeight
+                }
+            }
+            .store(in: &cancellables)
+        
+        NotificationCenter.default.publisher(for: UIResponder.keyboardWillHideNotification)
+            .compactMap { $0.userInfo }
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] userInfo in
+                guard let keyboardAnimationDuration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval,
+                      let keyboardAnimationCurve = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt
+                else { return }
+                
+                UIView.animate(withDuration: keyboardAnimationDuration, delay: 0, options: UIView.AnimationOptions(rawValue: keyboardAnimationCurve)) {
+                    self?.sendMessageStackViewBottomConstraint.constant = 0
+                }
             }
             .store(in: &cancellables)
     }
