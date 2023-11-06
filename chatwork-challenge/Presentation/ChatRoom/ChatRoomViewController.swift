@@ -17,6 +17,7 @@ final class ChatRoomViewController: UIViewController {
     @IBOutlet weak var messageTableView: UITableView! {
         didSet {
             messageTableView.dataSource = self
+            messageTableView.separatorStyle = .none
             messageTableView.register(MessageTableViewCell.reusable)
         }
     }
@@ -134,7 +135,6 @@ extension ChatRoomViewController: Storyboardable {
 extension ChatRoomViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(chatRoomViewModel.messages.value.count)
         return chatRoomViewModel.messages.value.count
     }
     

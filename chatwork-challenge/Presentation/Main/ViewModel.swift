@@ -46,7 +46,6 @@ final class ViewModel {
             }, receiveValue: { rooms in
                 self.rooms.value = rooms
                 self.errorLabelText.value = ""
-                print(rooms)
             })
             .store(in: &cancellables)
     }

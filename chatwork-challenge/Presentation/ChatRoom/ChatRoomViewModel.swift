@@ -64,7 +64,6 @@ final class ChatRoomViewModel {
                     print(error)
                 }
             }, receiveValue: { messages in
-                print(messages)
                 self.messages.value = messages
             })
             .store(in: &cancellables)
