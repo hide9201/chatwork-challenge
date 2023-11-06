@@ -40,11 +40,16 @@ final class ChatRoomViewController: UIViewController {
         
         sendButton.tapPublisher
             .sink { [weak self] in
-                self?.sendButtonDidTap.send("textViewの内容")
+                guard let body = self?.messageBodyTextView.text else { return }
+                self?.sendButtonDidTap.send(body)
+                self?.messageBodyTextView.text = ""
+                self?.messageBodyTextView.resignFirstResponder()
             }
             .store(in: &cancellables)
         
-        chatRoomViewModel.bind(input: .init(viewDidLoad: didLoad.eraseToAnyPublisher(), sendButtonDidTap: sendButtonDidTap.eraseToAnyPublisher()))
+        chatRoomViewModel.bind(input: .init(viewDidLoad: didLoad.eraseToAnyPublisher(),
+                                            textEdited: messageBodyTextView.textPublisher.compactMap { $0 }.eraseToAnyPublisher(),
+                                            sendButtonDidTap: sendButtonDidTap.eraseToAnyPublisher()))
         
         didLoad.send()
         
@@ -52,6 +57,13 @@ final class ChatRoomViewController: UIViewController {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] message in
                 self?.messageTableView.reloadData()
+            }
+            .store(in: &cancellables)
+        
+        chatRoomViewModel.isTextEmpty
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] isTextEmpty in
+                self?.sendButton.isEnabled = !isTextEmpty
             }
             .store(in: &cancellables)
         

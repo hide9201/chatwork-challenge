@@ -11,6 +11,7 @@ import Combine
 struct ChatRoomViewModelInput {
     
     let viewDidLoad: AnyPublisher<Void, Never>
+    let textEdited: AnyPublisher<String, Never>
     let sendButtonDidTap: AnyPublisher<String, Never>
 }
 
@@ -20,6 +21,7 @@ final class ChatRoomViewModel {
     
     var room: Room
     var messages = CurrentValueSubject<[Message], Never>([])
+    var isTextEmpty = CurrentValueSubject<Bool, Never>(true)
     
     private var cancellables = Set<AnyCancellable>()
     private let roomService = RoomService()
@@ -34,6 +36,13 @@ final class ChatRoomViewModel {
         input.viewDidLoad
             .sink { [weak self] in
                 self?.getMessages()
+            }
+            .store(in: &cancellables)
+        
+        input.textEdited
+            .sink { [weak self] text in
+                guard let self = self else { return }
+                self.isTextEmpty.value = self.isEmpty(text: text)
             }
             .store(in: &cancellables)
         
@@ -74,5 +83,9 @@ final class ChatRoomViewModel {
                 self?.getMessages()
             })
             .store(in: &cancellables)
+    }
+    
+    func isEmpty(text: String) -> Bool {
+        return text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 }
