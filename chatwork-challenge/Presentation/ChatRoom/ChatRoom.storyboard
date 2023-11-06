@@ -74,6 +74,7 @@
                         <outlet property="sendButton" destination="mW4-pK-FkD" id="nTh-1c-m4h"/>
                         <outlet property="sendMessageStackView" destination="u2t-5N-30m" id="Kah-ez-Frf"/>
                         <outlet property="sendMessageStackViewBottomConstraint" destination="mSH-Cn-DdJ" id="onl-Fk-VlZ"/>
+                        <outlet property="sendMessageStackViewTopConstraint" destination="fWg-VY-KL9" id="FJZ-G8-6A2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

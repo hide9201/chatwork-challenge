@@ -39,6 +39,10 @@
 		08ADBF952AF81225009170B3 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF942AF81225009170B3 /* ChatRoomViewModel.swift */; };
 		08ADBF972AF8F2D9009170B3 /* BorderedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF962AF8F2D9009170B3 /* BorderedTextView.swift */; };
 		08ADBF992AF94ED0009170B3 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF982AF94ED0009170B3 /* UIView+.swift */; };
+		08ADBF9C2AF96332009170B3 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF9B2AF96332009170B3 /* MessageTableViewCell.swift */; };
+		08ADBF9E2AF963D8009170B3 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08ADBF9D2AF963D8009170B3 /* MessageTableViewCell.xib */; };
+		08ADBFA02AF9646D009170B3 /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBF9F2AF9646D009170B3 /* NibInstantiatable.swift */; };
+		08ADBFA22AF98427009170B3 /* UIScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBFA12AF98427009170B3 /* UIScrollView+.swift */; };
 		429093BE590DF1AC3E1EC128 /* Pods_chatwork_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD396C1D29FDF51A0498A441 /* Pods_chatwork_challenge.framework */; };
 		67E54FBB055B84C3BB1DC870 /* Pods_chatwork_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945F502F3803D6E29BCD0482 /* Pods_chatwork_challengeTests.framework */; };
 		F45E169CEC74DE8D13FDAE83 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446A0E9467DCF172B20140D8 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework */; };
@@ -98,6 +102,10 @@
 		08ADBF942AF81225009170B3 /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
 		08ADBF962AF8F2D9009170B3 /* BorderedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextView.swift; sourceTree = "<group>"; };
 		08ADBF982AF94ED0009170B3 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		08ADBF9B2AF96332009170B3 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		08ADBF9D2AF963D8009170B3 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		08ADBF9F2AF9646D009170B3 /* NibInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
+		08ADBFA12AF98427009170B3 /* UIScrollView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+.swift"; sourceTree = "<group>"; };
 		2E1AE3206585D5979DB09B20 /* Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-chatwork-challenge-chatwork-challengeUITests/Pods-chatwork-challenge-chatwork-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		446A0E9467DCF172B20140D8 /* Pods_chatwork_challenge_chatwork_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chatwork_challenge_chatwork_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF4D9A55EBF4DB7FD32D6A2 /* Pods-chatwork-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatwork-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-chatwork-challengeTests/Pods-chatwork-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +215,7 @@
 				08ADBF982AF94ED0009170B3 /* UIView+.swift */,
 				08ADBF602AF3D759009170B3 /* NSObject+.swift */,
 				08ADBF852AF79CEC009170B3 /* KeychainManager.swift */,
+				08ADBFA12AF98427009170B3 /* UIScrollView+.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -216,6 +225,7 @@
 			children = (
 				08ADBF962AF8F2D9009170B3 /* BorderedTextView.swift */,
 				08ADBF622AF3D7C1009170B3 /* Storyboardable.swift */,
+				08ADBF9F2AF9646D009170B3 /* NibInstantiatable.swift */,
 				08ADBF5F2AF3D6DE009170B3 /* Launch */,
 				08ADBF5E2AF3D6D2009170B3 /* Main */,
 				08ADBF7C2AF6B433009170B3 /* RoomList */,
@@ -294,11 +304,21 @@
 		08ADBF8F2AF811B0009170B3 /* ChatRoom */ = {
 			isa = PBXGroup;
 			children = (
+				08ADBF9A2AF96309009170B3 /* Component */,
 				08ADBF942AF81225009170B3 /* ChatRoomViewModel.swift */,
 				08ADBF922AF81216009170B3 /* ChatRoomViewController.swift */,
 				08ADBF902AF811EE009170B3 /* ChatRoom.storyboard */,
 			);
 			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		08ADBF9A2AF96309009170B3 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				08ADBF9B2AF96332009170B3 /* MessageTableViewCell.swift */,
+				08ADBF9D2AF963D8009170B3 /* MessageTableViewCell.xib */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		194CA63BFEFCFB49550E1C37 /* Pods */ = {
@@ -434,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08ADBF382AF3B057009170B3 /* LaunchScreen.storyboard in Resources */,
+				08ADBF9E2AF963D8009170B3 /* MessageTableViewCell.xib in Resources */,
 				08ADBF912AF811EE009170B3 /* ChatRoom.storyboard in Resources */,
 				08ADBF352AF3B057009170B3 /* Assets.xcassets in Resources */,
 				08ADBF332AF3B055009170B3 /* Main.storyboard in Resources */,
@@ -565,6 +586,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08ADBFA22AF98427009170B3 /* UIScrollView+.swift in Sources */,
+				08ADBFA02AF9646D009170B3 /* NibInstantiatable.swift in Sources */,
 				08ADBF302AF3B055009170B3 /* ViewController.swift in Sources */,
 				08ADBF682AF3D9C8009170B3 /* BaseTarget.swift in Sources */,
 				08ADBF792AF3FCDD009170B3 /* Room.swift in Sources */,
@@ -583,6 +606,7 @@
 				08ADBF6D2AF3E06D009170B3 /* MyAccountTarget.swift in Sources */,
 				08ADBF932AF81216009170B3 /* ChatRoomViewController.swift in Sources */,
 				08ADBF952AF81225009170B3 /* ChatRoomViewModel.swift in Sources */,
+				08ADBF9C2AF96332009170B3 /* MessageTableViewCell.swift in Sources */,
 				08ADBF862AF79CEC009170B3 /* KeychainManager.swift in Sources */,
 				08ADBF822AF6B4B4009170B3 /* RoomListViewController.swift in Sources */,
 				08ADBF2E2AF3B055009170B3 /* SceneDelegate.swift in Sources */,

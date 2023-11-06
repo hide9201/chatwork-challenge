@@ -30,6 +30,7 @@ final class ViewController: UIViewController {
         
         loginButton.tapPublisher
             .sink { [weak self] in
+                self?.errorMessageLabel.text = ""
                 self?.loginButtonDidTap.send(self?.tokenTextField.text ?? "")
             }
             .store(in: &cancellables)
