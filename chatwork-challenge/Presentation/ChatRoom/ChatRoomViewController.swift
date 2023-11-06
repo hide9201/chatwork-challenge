@@ -98,7 +98,9 @@ final class ChatRoomViewController: UIViewController {
                 UIView.animate(withDuration: keyboardAnimationDuration, delay: 0, options: UIView.AnimationOptions(rawValue: keyboardAnimationCurve)) {
                     self.sendMessageStackViewBottomConstraint.constant = keyboardHeight
                     
+                    // ここはviewModelの仕事?
                     let bottomOffset = CGPoint(x: 0, y: self.messageTableView.contentOffset.y + keyboardHeight)
+                    
                     self.messageTableView.setContentOffset(bottomOffset, animated: false)
                     self.messageTableView.layoutIfNeeded()
                 }
