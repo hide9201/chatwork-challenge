@@ -66,6 +66,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="accountAvatarImageView" destination="dhu-we-cQ8" id="Qyr-ja-70r"/>
                 <outlet property="accountNameLabel" destination="TjC-ga-E78" id="Jj6-m5-ioh"/>
                 <outlet property="bodyLabel" destination="gnF-5G-gg0" id="dm4-fm-G5J"/>
                 <outlet property="sendTimeLabel" destination="ukR-ho-fg5" id="YQZ-8q-kOR"/>

@@ -12,6 +12,7 @@ final class MessageTableViewCell: UITableViewCell {
     
     static let reusable = ReusableCell<MessageTableViewCell>(nibName: "MessageTableViewCell")
     
+    @IBOutlet weak var accountAvatarImageView: UIImageView!
     @IBOutlet weak var accountNameLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     @IBOutlet weak var sendTimeLabel: UILabel!
@@ -19,6 +20,7 @@ final class MessageTableViewCell: UITableViewCell {
 
 extension MessageTableViewCell: NibInstantiatable {
     func inject(_ dependency: Message) {
+        accountAvatarImageView.load(dependency.account.avatarImageUrl, processorOption: .circle)
         accountNameLabel.text = dependency.account.name
         bodyLabel.text = dependency.body
         

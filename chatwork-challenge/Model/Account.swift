@@ -10,5 +10,5 @@ import Foundation
 struct Account: Codable {
     let accountId: Int
     let name: String
-    let avatarImageUrl: String
+    let avatarImageUrl: URL
 }
