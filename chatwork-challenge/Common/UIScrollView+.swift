@@ -14,4 +14,9 @@ extension UIScrollView {
         let bottomOffset = CGPoint(x: 0, y: self.contentSize.height - self.bounds.size.height)
         self.setContentOffset(bottomOffset, animated: animated)
     }
+    
+    func scrollVertically(by height: CGFloat, animated: Bool) {
+        let offset = CGPoint(x: 0, y: self.contentOffset.y + height)
+        self.setContentOffset(offset, animated: animated)
+    }
 }

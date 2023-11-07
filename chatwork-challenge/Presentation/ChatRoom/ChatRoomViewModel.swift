@@ -5,7 +5,7 @@
 //  Created by hide on 2023/11/06.
 //
 
-import Foundation
+import UIKit
 import Combine
 
 struct ChatRoomViewModelInput {
@@ -13,6 +13,8 @@ struct ChatRoomViewModelInput {
     let viewDidLoad: AnyPublisher<Void, Never>
     let textEdited: AnyPublisher<String, Never>
     let sendButtonDidTap: AnyPublisher<String, Never>
+    let keyboardWillShow: AnyPublisher<NotificationCenter.Publisher.Output, Never>
+    let keyboardWillHide: AnyPublisher<NotificationCenter.Publisher.Output, Never>
 }
 
 final class ChatRoomViewModel {
@@ -22,6 +24,8 @@ final class ChatRoomViewModel {
     var room: Room
     var messages = CurrentValueSubject<[Message], Never>([])
     var isTextEmpty = CurrentValueSubject<Bool, Never>(true)
+    var keyboardInfoWhenWillShow = CurrentValueSubject<(keyboardHeight: CGFloat?, keyboardAnimationDuration: TimeInterval?, keyboardAnimationCurve: UInt?), Never>((nil, nil, nil))
+    var keyboardInfoWhenWillHide = CurrentValueSubject<(keyboardAnimationDuration: TimeInterval?, keyboardAnimationCurve: UInt?), Never>((nil, nil))
     
     private var cancellables = Set<AnyCancellable>()
     private let roomService = RoomService()
@@ -50,6 +54,24 @@ final class ChatRoomViewModel {
             .sink { [weak self] body in
                 // 送信処理
                 self?.postMessage(body: body)
+            }
+            .store(in: &cancellables)
+        
+        // viewController側でやってもいい？そうすればviewModelでのimport UIKitも不要になる．型のキャストとかはロジックに入る？
+        input.keyboardWillShow
+            .sink { [weak self] notification in
+                let keyboardHeight = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect)?.height
+                let keyboardAnimationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval
+                let keyboardAnimationCurve = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt
+                self?.keyboardInfoWhenWillShow.value = (keyboardHeight, keyboardAnimationDuration, keyboardAnimationCurve)
+            }
+            .store(in: &cancellables)
+        
+        input.keyboardWillHide
+            .sink { [weak self] notification in
+                let keyboardAnimationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval
+                let keyboardAnimationCurve = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt
+                self?.keyboardInfoWhenWillHide.value = (keyboardAnimationDuration, keyboardAnimationCurve)
             }
             .store(in: &cancellables)
     }
