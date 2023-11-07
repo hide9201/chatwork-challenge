@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u2t-5N-30m">
-                                <rect key="frame" x="16" y="690" width="361" height="128"/>
+                                <rect key="frame" x="16" y="682" width="361" height="128"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="アプリから送信" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jCU-Pq-1Ek" customClass="BorderedTextView" customModule="chatwork_challenge" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="8" width="281" height="120"/>
@@ -51,7 +51,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TZP-dI-jwo">
-                                <rect key="frame" x="0.0" y="103" width="393" height="587"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="579"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -62,7 +62,7 @@
                             <constraint firstItem="u2t-5N-30m" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="F9o-TP-zHk"/>
                             <constraint firstItem="TZP-dI-jwo" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="FNA-Rv-Wpz"/>
                             <constraint firstItem="u2t-5N-30m" firstAttribute="top" secondItem="TZP-dI-jwo" secondAttribute="bottom" id="fWg-VY-KL9"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="u2t-5N-30m" secondAttribute="bottom" id="mSH-Cn-DdJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="u2t-5N-30m" secondAttribute="bottom" constant="8" id="mSH-Cn-DdJ"/>
                             <constraint firstItem="TZP-dI-jwo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="owK-DZ-Y8z"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="u2t-5N-30m" secondAttribute="trailing" constant="16" id="pf9-as-lc2"/>
                         </constraints>

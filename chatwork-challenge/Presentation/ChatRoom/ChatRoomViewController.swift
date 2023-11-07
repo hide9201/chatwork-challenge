@@ -98,7 +98,7 @@ final class ChatRoomViewController: UIViewController {
                 else { return }
 
                 UIView.animate(withDuration: keyboardAnimationDuration, delay: 0, options: UIView.AnimationOptions(rawValue: keyboardAnimationCurve)) {
-                    self?.sendMessageStackViewBottomConstraint.constant = keyboardHeight
+                    self?.sendMessageStackViewBottomConstraint.constant += keyboardHeight
                     self?.messageTableView.scrollVertically(by: keyboardHeight, animated: false)
                     self?.messageTableView.layoutIfNeeded()
                 }
@@ -113,7 +113,7 @@ final class ChatRoomViewController: UIViewController {
                 else { return }
 
                 UIView.animate(withDuration: keyboardAnimationDuration, delay: 0, options: UIView.AnimationOptions(rawValue: keyboardAnimationCurve)) {
-                    self?.sendMessageStackViewBottomConstraint.constant = 0
+                    self?.sendMessageStackViewBottomConstraint.constant = 8
                     self?.messageTableView.layoutIfNeeded()
                 }
             }
