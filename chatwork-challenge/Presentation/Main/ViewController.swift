@@ -30,6 +30,7 @@ final class ViewController: UIViewController {
         
         loginButton.tapPublisher
             .sink { [weak self] in
+                self?.errorMessageLabel.text = ""
                 self?.loginButtonDidTap.send(self?.tokenTextField.text ?? "")
             }
             .store(in: &cancellables)
@@ -42,12 +43,11 @@ final class ViewController: UIViewController {
             .store(in: &cancellables)
         
         viewModel.rooms
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] rooms in
                 if rooms.isEmpty { return }
-                // ここで遷移?
                 let roomListViewController = RoomListViewController(with: rooms)
                 self?.navigationController?.pushViewController(roomListViewController, animated: true)
-                print("RoomList\n\(rooms)")
             }
             .store(in: &cancellables)
     }

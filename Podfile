@@ -8,10 +8,8 @@ target 'chatwork-challenge' do
   # Network
   pod 'Moya/Combine', '~> 15.0'
 
-  # Promise
-  pod 'PromiseKit'
-
   # Misc
+  pod 'Nuke'
   pod 'KeychainAccess'
   pod 'Instantiate'
   pod 'ReusableKit'

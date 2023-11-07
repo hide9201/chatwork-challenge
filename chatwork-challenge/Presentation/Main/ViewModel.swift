@@ -27,12 +27,12 @@ final class ViewModel {
         input.loginButtonDidTap
             .sink { [weak self] token in
                 KeychainManager.shared.set(key: "token", value: token)
-                self?.getRoomList(token: token)
+                self?.getRoomList()
             }
             .store(in: &cancellables)
     }
     
-    func getRoomList(token: String) {
+    func getRoomList() {
         roomService.getRoomList()
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -46,7 +46,6 @@ final class ViewModel {
             }, receiveValue: { rooms in
                 self.rooms.value = rooms
                 self.errorLabelText.value = ""
-                print(rooms)
             })
             .store(in: &cancellables)
     }

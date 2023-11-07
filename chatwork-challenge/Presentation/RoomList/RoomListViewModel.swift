@@ -11,7 +11,7 @@ final class RoomListViewModel {
     
     // MARK: - Property
     
-    var rooms: [Room]!
+    var rooms: [Room]
     
     // MARK: - Initializer
     
