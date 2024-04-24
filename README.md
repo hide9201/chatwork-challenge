@@ -2,7 +2,7 @@
 
 ## 概要
 
-Chatwork iOS提出課題
+ChatworkAPIを利用したアプリ
 
 ## アプリ仕様・動作・説明
 
